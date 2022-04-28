@@ -2,6 +2,7 @@ html {
     font-size: 16px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 /* Redimensión de fuente utilizando rem */
 
@@ -41,10 +42,12 @@ h6 {
 
 * {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     margin: 0;
+    height: 100vh;
 }
 
 
@@ -97,27 +100,6 @@ body {
 
 /* Otras clases */
 
-.abajo {
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-top: 1%;
-}
-
-.borde {
-    border: 3px solid black;
-}
-
-.titulo {
-    text-align: center;
-}
-
-.boton {
-    background-color: #fea228;
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-}
-
 
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
@@ -125,6 +107,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bordes {
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+input,
+select {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+
+input[type=submit] {
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
